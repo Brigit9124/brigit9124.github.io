@@ -1,20 +1,3 @@
-from flask import Flask, render_template
-
-app = Flask(__name__)
-
-# 메인 페이지 경로 설정
-@app.route('/')
-def home():
-    return render_template('index.html')
-
-# 추가 페이지 예시 (소개 페이지)
-@app.route('/about')
-def about():
-    return "<h2>이곳은 소개 페이지입니다!</h2>"
-
-if __name__ == '__main__':
-    # debug=True는 수정사항을 바로 반영해주는 개발 모드입니다.
-    app.run(debug=True)
 <!DOCTYPE html>
 <html lang="ko">
 <head>
